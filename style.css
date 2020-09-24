@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+}
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+body {
+  background-color: cornsilk;
+  width: 1200px;
+  margin: 0 auto;
+}
+header {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+header h1 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+header nav {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: navajowhite;
+}
+header nav a {
+  display: flex;
+  justify-content: center;
+  width: 15%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+header nav a:hover {
+  color: brown;
+  font-style: italic;
+  margin: 0;
+}
+/*---FELXBOX---*/
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 70px;
+}
+.flex-child {
+  display: flex;
+  flex: 0 0 22%;
+  margin-left: 2.4%;
+  margin-bottom: 2.4%;
+  background-color: rgb(231, 229, 216);
+  height: 250px;
+}
+.flex-child-wide {
+  margin-left: 2.4%;
+  margin-bottom: 2.4%;
+  flex-basis: 46.4%;
+  height: 250px;
+}
+.flex-child p {
+  font-size: 17px;
+  margin: 20px 10px 20px 10px;
+}
+/*---GRID---*/
+.grid-container {
+  justify-content: center;
+  margin-top: 40px;
+  display: grid;
+  grid-template-rows: 250px 250px 250px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 30px;
+  padding: 2.5%;
+}
+.grid-item {
+  background-color: rgb(231, 229, 216);
+}
+.grid-item p {
+  font-size: 17px;
+  margin: 20px 10px 20px 10px;
+}
+.grid-long {
+  display: grid;
+  grid-column: span 2;
+}
+.grid-portree {
+  display: grid;
+  grid-row: span 2;
+}
